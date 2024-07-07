@@ -4,35 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Day 4</title>
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="../styles/style3.css">
 </head>
 <body>
-  <p>Creating a Table</p>
-  <img src="../image/create table.png" alt="">
-  <br>
-  <p>Output</p>
-  <img src="../image/table fig.png" alt="">
-  <br>
-  <p>Insert Value on table</p>
-  <img src="../image/inserting date in sql.png" alt="">
-  <p>Output</p>
-  <img src="../image/table fig.png" alt="">
-  <br>
-  <p>Altering the Table</p>
-  <img src="../image/adiing new field.png" alt="">
-  <br>
+  <div class="container">
+    <h2 class="title">How to use SQL To For CRUD(Creat Read Update Delete) Operation</h2>
+     <h5>Last Modified:5 July,2024</h5>
+  <a class="button" href="/index.html">Return</a>
+  <hr>
+  <pre>To perform CRUD operation in SQL you need an Application Known as Xampp. XAMPP is an open-source software package that provides a local web server environment for testing and
+development.For detail info <span><a href="#hoem">Click here</a></span></pre>
+    <pre>Few list of Commands used in this tutorial</pre>
+    <ul style="list-style-type: circle;">
+      <li>CREATE</li>
+      <li>ADD</li>
+      <li>UPDATE</li>
+      <li>DROP</li>
+      <li>INSERT INTO</li>
+      <li>UPDATE</li>
+      <li>ALTER</li>
+    </ul>
+  <h2>How to create Database using SQL?</h2>
+  <pre>After Installation of Xammp, Open the Xampp Control Pannel</pre>
+  <img src="../image/Xampp-Control_Face.png" alt="">
+   <pre>Click Start on  Apache and  MySQL Serices</pre>
+   <img src="../image/Xampp-Start-Atrrow.png" alt="">
+    <pre>Open browser and paste <a target="_blank" href="http://localhost/phpmyadmin/">http://localhost/phpmyadmin/</a> Url</pre>
+    <pre> After Opening the Website , To Create DataBase Click on SQL Tab</pre>
+    <img src="../image/Admin-Sql.png" alt="">
+    <pre>In SQL Tab Write <span>CREATE DATABASE {name...} and press GO</span></pre>
+    <img src="../image/database -creation.png" alt="">
+    <pre>Your database is added into the Database List</pre>
+    <img src="../image/Database-List (2).png" alt="">
+  </div>
+  <h2>How to create Table in the database?</h2>
+  <pre>After Creation of database Open the database And Reopen the SQL Tab</pre>
+  <pre>Make sure you are inside databse not on server when opening the SQL Tab</pre>
+   <img src="../image/Error-Server-databse-Sql.png" alt="">
+  <pre>Write following command in Console and Run it.
+    <span>CREATE {name of table}
+    (
+     ID INT(3), 
+     NAME VARCHAR(255),
+     AGE INT(3),
+     HOBBY VARCHAR(255)
+    );</span>   
+  </pre>
 
-  <p>Dropping the table</p>
-  <img src="../image/dropping a table.png" alt="">
-  <br>
-  <p>Output</p>
-  <img src="../image/database gayo.png" alt="">
+  <pre>You have created the table </pre>
+  <img src="../image/creation-of-table.png" alt="">
 
-  <p>Dropping the database</p>
-  <img src="../image/database drop .png" alt="">
-  <br>
-  <p>Output</p>
-  <img src="../image/database sachhikai uudyo.png" alt="">
+  <h2>How to Add Data in Table?</h2>
+  <pre>Click on table and SQL Tab</pre>
+  <pre>Write Following Command
+      <span>
+ INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+      </span>
+  <img src="../image/Example-adding-data -code.png" alt="">
 
+  </pre>
+  <pre>You have successfully Added data in Table.Inorder to see your table click on browse tab</pre>
+  <img src="../image/Table-example.png" alt="">
+
+  <h2>How to ALter Table ?</h2>
+  <pre>Go to the SQL Tab and Write</pre>
+  <span>
+    ALTER TABLE table_name
+    ADD column_name datatype;
+  </span>
+  <br><br>
+  <img src="../image/Altering-table.png" alt="">
 </body>
 </html>

@@ -38,3 +38,21 @@ p{
 .text{
   text-shadow: 2px 2px 5px rgb(164, 158, 158);
 }
+
+.button{
+  position: relative;
+  bottom: 30px;
+  left: 0px;
+  color: white;
+  padding: 12px 25px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #f15048;
+}
+
+.button:hover{
+  background-color:  #4399fa;
+  transition: 0.5s ease;
+  
+}
